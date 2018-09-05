@@ -18,7 +18,7 @@ if(! class_exists('DEF_Hook') ){
 
         /*!
          * Fonksiyonlar tanımlar.
-         * @exp: set_action( array( 'function-1', 'function-2' ) );
+         * @exp: set_actions( array( 'function-1', 'function-2' ) );
          */
         function set_actions($tags){
             foreach( $tags as $tag ){
