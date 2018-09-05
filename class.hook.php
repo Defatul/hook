@@ -8,8 +8,22 @@ if(! class_exists('DEF_Hook') ){
          */
         var $hooks = [];
 
+        /*!
+         * Fonksiyon tanımlar.
+         * @exp: set_action( 'function-name' );
+         */
         function set_action($tag){
             $this->hooks [$tag] = [];
+        }
+
+        /*!
+         * Fonksiyonlar tanımlar.
+         * @exp: set_action( array( 'function-1', 'function-2' ) );
+         */
+        function set_actions($tags){
+            foreach( $tags as $tag ){
+                $this->set_action( $tag );
+            }
         }
 
         function unset_action($tag){
